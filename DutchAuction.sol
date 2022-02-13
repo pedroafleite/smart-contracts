@@ -48,7 +48,7 @@ contract DutchAuction {
         return startingPrice - discount;
     }
 
-    function buyPrice() external payable {
+    function buy() external payable {
         require(block.timestamp < expiresAt, "Auction expired")
         uint price = getPrice()
         require(msg.value >= price, "ETH < price")
