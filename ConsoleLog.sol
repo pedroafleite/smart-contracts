@@ -4,7 +4,6 @@ pragma solidity ^0.8;
 
 import "hardhat/console.sol";
 
-
 contract HardhatContract {
     function test(uint amount) external {
         uint x = 123;
